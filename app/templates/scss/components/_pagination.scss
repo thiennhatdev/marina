@@ -1,0 +1,35 @@
+.dot:hover + .titleDot{
+    display: block ;
+}
+.pagination{
+    position: fixed;
+    right: 20px;
+    z-index: 1000;
+    top: 50%;
+    transform: translateY(-50%);
+    .wrap__dot{
+        display: flex;
+        flex-direction: row-reverse;
+        
+        align-items: center;
+        text-align: right;
+        height: 27px;
+        span{
+            margin-right: 7px;
+            display: none;
+        }
+        .dot {
+            transition: 0.5s;
+            cursor: pointer;
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background-color: $black;
+            &:hover {
+                transform: scale(1.8,1.8);
+            }
+            
+        }
+        
+    }
+}

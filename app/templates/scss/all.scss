@@ -1,0 +1,639 @@
+@import './common/common.scss';
+@import './common/variable.scss';
+@import './common/reponsive.scss';
+
+body{
+    overflow: hidden;
+}
+// open main
+main{
+    transition: 0.8s;
+    height: 100%;
+    position: relative;
+    // style for phần cố định------------
+    // open pagination
+    @import './components/pagination.scss';
+    // open h4
+    .recive{
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        z-index: 1000;
+        
+        background-color: #f4ae2c;
+        text-transform: uppercase;
+        font-size: 1.5em;
+        border-radius: 12px;
+        padding: 15px 22px;
+        cursor: pointer;
+        &:hover{
+            background-color: $yellow;
+        }
+    }
+    // open button  contact
+    .button__contact{
+        position: fixed;
+        bottom: 15px;
+        z-index: 1000;
+        right: 15px;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        background-color: $greenDark;
+        border-radius: 50px;
+        box-sizing: border-box;    
+        .phone{
+            padding: 20px;
+            border-radius: 50%;
+            background-color: $greenLight;
+            margin-right: 13px;
+            cursor: pointer;
+            box-sizing: border-box;
+            &:hover i{
+                transform: scale(-1.2,1.4) ;
+                
+            }
+            
+            i{
+                transition: 0.5s;
+                transform: scaleX(-1) ;
+                font-size: 22px;
+                color: white;
+            }
+        }
+        a{
+            font-weight: 600;
+            font-size: 1.2em;
+            padding-right: 29px;
+            color: white;
+            font-family: cursive;
+            &:hover{
+                text-decoration: underline;
+            }
+            &:hover ~ .phone i{
+                transform: scale(-1.2,1.4) ;
+            }
+        }
+    }
+    // style for slide--------------------
+    // ---đầy là phần slide chung cho từng trang
+    //-------------------------------
+    //----------------------------
+
+    .slide{
+        
+        height: 100%
+    }
+    //------------------------------
+    //--------------------
+    //---------------------------
+    // open introduce-----------
+    .introduce{
+        position: relative;
+        background: url('./../images/bg-1.jpg');
+        background-size: 136% 100%;
+        background-position: 51% 100%;
+        &__slide{
+            padding: 0 10%;
+            position: absolute;
+            top: 10%;
+            width: 100%;
+            marquee{
+                font-size: 3.5em;
+                text-transform: uppercase;
+                color: $greenDark;
+                font-weight: 600;
+                transform: scaleX(0.7);
+                text-shadow: white 0px 1px,0px -1px white;
+                
+                padding: 14px 0;
+                letter-spacing: -1px;
+            }
+            // h1{
+            //     white-space: nowrap;
+            //     font-size: 3.5em;
+            //     text-transform: uppercase;
+            //     color: $greenDark;
+            //     letter-spacing: -6px;
+            //     // animation:  slide 23s linear infinite;
+            //     // @keyframes slide{
+            //     //     0%{margin-left: 100%;}
+            //     //     100%{margin-left: -230%;}
+            //     // }
+            // }   
+            
+            
+        }
+        h4{
+            position: absolute;
+            text-transform: uppercase;
+            font-size: 1.7em;
+            width: 63%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            line-height: 42px;
+            background-color: rgba($yellow,0.8);
+            border-radius: 17px;
+            padding: 20px 23px;
+            text-align: center;
+        }
+    }
+    // open policy------------
+    .policy{
+        background: url('./../images/bg-2.jpg');
+        background-size: 100% 100%;
+        position: relative;
+        &__list{
+            position: absolute;
+            top: 11%;
+            left: 5%;
+            width: 36%;
+            background-color: rgba(228,200,81,0.8);
+            border-radius: 25px;
+            padding: 28px;
+            h2{
+                text-transform: uppercase;
+                color: $greenLight;
+                font-size: 2.2em;
+                line-height: 48px;
+            }
+            &-item{
+                p{
+                    text-indent: 10%;
+                    line-height: 30px;
+                    position: relative;
+                    &:before{
+                        position: absolute;
+                        font-family: FontAwesome;
+                        content: '\F299';
+                        left: -35px;
+                    }
+                    strong{
+                        color: red;
+                    }
+                }
+            }
+        }
+    }
+    // open hoitu tinh tuy--------------
+    .hoitu__tinhtuy{    
+        background: url('./../images/bg-3.jpg');
+        background-size: 100% 100%;
+        position: relative;
+        
+        &-text{
+            position: absolute;
+            width: 32%;
+            height: 100%;
+            padding: 10% 0 0 5% ;
+            
+            background-image: linear-gradient(to right,rgba(0,255,0,0.5),rgba(0,255,0,0));
+            
+            h2{
+                text-transform: uppercase;
+                color: white;
+                font-size: 2em;
+                padding: 15px 0;
+            }
+            p{
+                font-weight: 600;
+                color: white;
+                line-height: 31px;
+                strong{
+                    color: white;
+                }
+            }
+        }
+    }
+    // open investor-----------------
+    .investor{
+        position: relative;
+        background-image: linear-gradient( to left,rgba(120,219,232,1),white);
+        &__wrap{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 76%;
+            h3{
+                text-align: center;
+                text-transform: uppercase;
+                font-size: 2.6em;
+                
+            }
+            img{
+                margin-left: 50%;
+                transform: translateX(-50%);
+
+
+
+            }
+            p{
+                text-indent: 14px;
+                font-size: 1.3em;
+                line-height: 31px;
+                text-align: center;
+            }
+        }
+    }
+    // open information----------------
+    .information{   
+        background: url('./../images/bg-4.jpg');
+        background-size: 100% 100%;
+        position: relative;
+        &__wrap{
+            width: 40%;
+            position: absolute;
+            top: 50%;
+            right: 8%;
+            transform: translateY(-50%);
+            &-project{
+                background-color: rgba($greenDark ,0.8);
+                border-radius: 23px;
+                padding: 5% 7%;
+                h2{
+                    color: white;
+                    text-transform: uppercase;
+                    font-size: 2em;
+                }
+                &--list{
+                    margin-top: 3%;
+                }
+                p{
+                    line-height: 33px;
+                    color: white;
+                }
+            }
+            &-signup{
+                text-transform: uppercase;
+                text-align: center;
+                margin-top: 7%;
+                background-color: $yellow;
+                font-size: 1.3em;
+                padding: 4%;
+                border-radius: 13px;
+                font-weight: 600;
+            }
+        }
+        
+        
+        
+    }
+    // open position--------------------
+    .position{
+        position: relative;
+        background: url('./../images/bg-5.png');
+        background-size: 100% 100%;
+        &__text{
+            position: absolute;
+            width: 40%;
+            top: 3%;
+            left: 4%;
+            background-color: rgba(133,198,139,0.8);
+            padding: 3% 2%;
+            h2{
+                text-transform: uppercase;
+                font-size: 2.1em;
+                color: white;
+                line-height: 44px;
+            }
+            h4{  
+                padding: 2% 5%;
+                line-height: 26px;
+                color: white;
+                strong{
+                    color: white;
+                }
+            }
+            &-list{
+                margin-top: 8%;
+                p{
+                    line-height: 27px;
+                    color: white;
+                    position: relative;
+                    text-indent: 46px;
+                    &:before{
+                        position: absolute;
+                        content: '';
+                        top: 10px;
+                        left: 22px;
+                        width: 6px;
+                        height: 6px;
+                        border-radius: 50%;
+                        background-color: white;   
+                    }
+                }
+            }
+        }
+    }
+    // open highlight-----------------
+    .highlight{
+        background:url('./../images/bg-6.jpg');
+        background-size: 100% 100%;
+        position: relative;
+        
+        &__wrap{
+            position: absolute;
+            top: 6%;
+            left: 5%;
+            
+            width: 40%;
+            
+            &-top{
+                background-color: rgba($greenDark,0.8);
+                padding: 6%;
+                border-radius: 10px;
+                h1{
+                    text-transform: uppercase;
+                font-size: 2em;
+                color: white;
+                }
+                p{
+                    line-height: 27px;
+                    color: white;
+                    margin-top: 3%;
+                    strong{
+                        color: white;   
+                    }
+                }
+            }
+            &-bottom{
+                background-color: rgba($greenDark,0.8);
+                margin-top: 5%;
+                border-radius: 10px;
+                padding: 4%;
+                p{
+                    font-weight: 600;
+                    color: white;
+                    text-indent: 18px;
+                    line-height: 29px;
+                    position: relative;
+                    &:before{
+                        position: absolute;
+                        content: '';
+                        top:11px;
+                        left: 2px;
+                        width: 6px;
+                        height: 6px;
+                        border-radius: 50%;
+                        background-color: white; 
+                    }
+                }
+            }
+        }
+    }
+    // open ultilities outside-----------------
+    .ultilities__outside{
+        position: relative;
+        background:url('./../images/bg-7.png');
+        background-size: 100% 100%;
+        &-wrap{
+            position: relative;
+            height: 50%;
+            &--text{
+                width: 100%;
+                position: absolute;
+                width: 30%;
+                top: 14%;
+                right: 5%;
+                h2{
+                    line-height: 43px;
+                    text-transform: uppercase;
+                    font-size: 2em;
+                    color: white;
+                    padding: 2%;
+                }
+                p{
+                    line-height: 25px;
+                    padding: 2%;
+                    color: white;
+                }
+            }
+        }
+        &-images{
+            padding: 0 6%;
+            display: flex;
+            justify-content: space-between;
+            height: 35%;
+            &--item{
+                width: 22%;
+                position: relative;
+                border: 7px solid rgba(0,255,255,0.2);
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+                p{
+                    font-weight: 600;
+                    position: absolute;
+                    width: 100%;
+                    bottom: 0;
+                    left: 0;
+                    text-align: center;
+                    background-color: rgba(0,0,0,0.4);
+                    line-height: 40px;
+                    color: white;
+                }
+            }
+        }
+    }
+    // open ultilities ínide--------------
+    .ultilities__inside{
+        .ultilities__inside-text{
+            padding: 2% 0; 
+            text-align: center;
+            h2{
+                
+                padding: 1% 3%;
+                background-color: $greenLight;
+                display: inline-block;
+                text-transform: uppercase;
+                color: white;
+                font-size: 2.3em;
+            }
+        }
+        
+        &-images{
+            height: 80%;
+            // ----------
+            &--item{
+                width: 23%;
+                border: 7px solid $greenLight;
+                position: relative;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+                p{
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    background-color: rgba(0,128,0,0.6);
+                    justify-content: center;
+                    color: white;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    
+                }
+            }
+            // -----------
+            &--top{
+                height: 45%;
+                display: flex;
+                justify-content: space-between;
+                padding: 0 4%;
+            }
+            &--bottom{
+                height: 45%;
+                margin-top: 3%;
+                display: flex;
+                justify-content: center;
+                .ultilities__inside-images--item{
+                    margin-right: 3%;
+                }
+            }
+        }
+
+    }
+    // open video------------------
+    .video{
+        background:url('./../images/bg-8.jpg');
+            background-size: 100% 100%;
+        &__wrap{
+            width: 100%;
+            height: 100%;
+            position: relative;
+            video{
+                position: absolute;
+                width: 80%;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+            }
+        }
+    }
+    // open contact--------------
+    .contact{
+        background-image: linear-gradient(to right,white,$yellow);  
+        &__signup{
+            display: flex;
+            height: 76%;
+            &-information{
+                width: 60%;
+                h2{
+                    text-transform: uppercase;
+                    color: red;
+                    font-size: 2.2em;
+                    padding: 2% 3%;
+                    line-height: 41px;
+                    opacity: 0.7;
+                }
+                h3{
+                    i{
+                        color: red;
+                        font-size: 0.8em;
+                    }
+                    display: inline-block;
+                    padding: 0 0 0 18%;
+                    letter-spacing: -1px;
+                    color: white;
+                    font-size: 1.7em;
+                    background-color: orange;
+                    text-transform: uppercase;
+                    line-height: 34px;
+                    font-weight: 100;
+                    margin-bottom: 1%;
+                }
+                h4{
+                    margin-left: -1%;
+                    text-transform: uppercase;
+                    font-size: 1.6em;
+                    color: #c55f0c;
+                    background-color: #ffc30f;
+                    padding: 3% 9%;
+                    line-height: 37px;
+                    box-shadow: 5px 5px #65572c;
+                    i{
+                        margin-right: 1%;
+                        color: red;
+                    }
+                }
+            }
+            &-form{
+                padding: 2% 2%;
+                width: 40%;
+                h2{
+                    font-size: 2em;
+                    text-transform: uppercase;
+                    color: green;
+                    padding: 3% 0;
+                }
+                label{
+                    font-weight: 600;
+                    opacity: 0.6;
+                }
+                input[type=text]{
+                    width: 80%;
+                    height: 45px;
+                    margin: 3% 0;
+                }
+                input[type=textarea]{
+                    height: 80px;
+                    width: 80%;
+                    margin: 3% 0;
+                }
+                button{
+                    width: 80%;
+                    text-transform: uppercase;
+                    padding: 3%;
+                    font-weight: 600;
+                    font-size: 1.4em;
+                    color: white;
+                    background-color: orange;
+                    border: none;
+                    cursor: pointer;
+                    &:hover{
+                        opacity: 0.8;
+                    }
+                }
+            }
+        }
+        hr{
+            border: 1px solid silver;
+            width: 80%;
+        }
+        &__address{
+            height: 23%;
+            display: flex;
+            padding: 0 10%;
+            white-space: nowrap;
+            h3{
+                text-transform: uppercase;
+                color: green;
+                font-size: 2em;
+                padding: 1%;
+            }
+            &-list{
+                padding: 0% 5%;
+                h4{
+                    opacity: 0.8;
+                    font-size: 1.2em;
+                    text-transform: uppercase;
+                    padding: 3% 3%;
+                }
+                ul{
+                    margin-left: 7%;
+                    list-style-type: inherit;
+                    li{
+                    
+                        padding: 1% 0;
+                    }
+                }
+            }
+        }
+    }
+}
+

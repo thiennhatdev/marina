@@ -1,0 +1,186 @@
+@media only screen and (max-width : 1024px){
+    main{
+        .introduce{
+            h4{
+                width:90% !important;
+            }
+        }
+        .policy__list{
+            width: 50% !important;
+        }
+        .hoitu__tinhtuy-text{
+            width: 50% !important;
+        }
+        .position__text{
+            width: 60% !important;
+        }
+        .highlight__wrap{
+            width: 60% !important;
+        }
+        .contact__signup-information{
+            h2{
+                font-size: 1.7em !important;
+            }
+            h3{
+                font-size: 1.2em !important;
+            }
+            h4{
+                font-size: 1.2em !important;
+            }
+
+        }
+        .contact__signup-form{
+            h2{
+                font-size: 1.2em !important;
+            }
+            form{
+                input[type=text]{
+                    height: 30px !important;
+                }
+                button{
+                    font-size: 1em !important;
+                }
+            }
+        }
+
+    }
+    .contact__address-list{
+        h4{
+            padding: 1% 3% !important;
+        }
+    }
+}
+@media only screen and (max-width : 800px){
+    .introduce{
+        marquee{
+            font-size: 2.6em !important;
+        }
+        h4{
+            font-size: 1em !important;
+        }
+    }
+    .policy__list{
+        top: 6% !important;
+        h2{
+            font-size: 1.7em  !important;
+        }
+    }
+    .information__wrap{
+        width: 50% !important;
+    }
+    .position__text {
+        h2{
+            font-size: 1.6em !important;
+            line-height: 34px;
+        }
+        h4{
+            line-height: 21px !important;
+        }
+        &-list{
+            p{
+                line-height: 19px !important;
+            }
+        }
+    }
+    .highlight__wrap{
+        display: flex;
+        width:100% !important;
+        &-top{
+            width: 50%;
+            h1{
+                font-size: 1.2em !important;
+            }
+        }
+        &-bottom{
+            width: 50%;
+            margin-left: 10%;
+            margin-top: 0 !important;
+        }
+    }
+    .ultilities__outside{
+        display: flex;
+        &-wrap{
+            width: 40%;
+            height: 100% !important;
+            &--text{
+                width: 100% !important;
+                padding: 0 17% !important;
+            }
+        }
+        &-images{
+            width: 60%;
+            height: 100% !important;
+            flex-direction: column;
+            align-items: center;
+            padding: 2% 0;
+            &--item{
+                width: 62% !important;
+                height: 22% !important;
+            }
+        }
+    }
+}
+@media only screen and (max-width : 768px){
+    main{
+        .policy__list{
+        width: 70% !important;
+        }
+        .highlight__wrap{
+            width: 80% !important;
+        }
+        .contact__signup-information{
+            h2{
+                line-height: 31px !important;
+                font-size: 1.2em !important;
+            }
+            h3{
+                font-size: 1em !important;
+            }
+            h4{
+                line-height: 29px !important;
+            }
+        }
+        .contact__address-list{
+            h4{
+                font-size: 1em !important;
+            }
+        }
+    }
+}
+@media only screen and (max-width : 680px){
+    main{
+        .contact{
+            &__signup{
+                height: 100% !important;
+            }
+            hr{
+                display: none !important;
+            }
+            &__address{
+                display: none !important;
+            }
+        }
+    }
+}
+@media only screen and (max-width : 600px){
+    main{
+        .hoitu__tinhtuy-text{
+            width: 80% !important;
+        }   
+        .investor__wrap{
+            h3{
+                font-size: 2em !important;  
+            }
+            p{
+                font-size: 1em !important;
+                line-height: 25px !important;
+            }
+        }
+        .information__wrap{
+            width: 90% !important;
+        }
+        .position__text{
+            width: 80% !important;
+        }
+    } 
+}

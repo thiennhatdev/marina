@@ -1,0 +1,191 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='UTF-8')
+        title Dự án Tuần Châu Marina | Tập đoàn Tuần Châu
+        meta(name='viewport',content='width=device-width,initial-scale=1.0')
+        meta(name='keywords',content='tuần châu,tập đoàn,dự án,marina')
+        meta(name='description',content='Dự án Tuần Châu')
+        meta(http-equiv='content-language',content='vi')
+        link(rel='stylesheet',href='https://use.fontawesome.com/releases/v5.4.1/css/all.css')
+        link(rel='stylesheet',href='./css/all.css')
+        link(rel='shortcut icon',href='#')
+    body
+        main#wrap-slide
+            // phần cố định
+            include ./components/pagination.pug
+            +pagination
+            // recive
+            h4.recive nhận bảng giá
+            // contact
+            .button__contact    
+                a(href='#') 0916 353 773    
+                .phone
+                    i.fas.fa-phone
+                
+            // open slide
+            // introduce
+            .introduce.slide
+                .introduce__slide
+                    marquee chính thức mở bán giai đoạn ii tại khu biệt thự triệu đô và bãi biển nhân tạo hông kong
+                h4 khách hàng ký hợp đồng trước 28/10 tham dự sự kiện bốc thăm 02 xe  mercedes và 20 xe vespa tại marina tuần châu    
+            // policy
+            .policy.slide
+                .policy__list
+                    h2 chính sách bán hàng
+                    .policy__list-item
+                        p Khách hàng thanh toán 95% (đợt 1) được chiết khấu ngay <strong> 2%</strong> giá trị căn hộ
+                        p Hỗ trợ cho vay đến <strong>50%</strong> giá trị HĐMB
+                        p Lãi suất ưu đãi <strong>0%</strong> trong 12 tháng đầu tiên.
+                        p Ân hạn gốc lên đến <strong>12 tháng</strong>
+                        p Đối với khách hàng không sử dụng chính sách HTTC : Chiết khấu <strong> 5%</strong> giá trị căn hộ
+                        p Cơ hội bốc thăm trúng thưởng Mercedes GLC 250 trị giá <strong> 2 tỷ đồng </strong> cùng 20 xe máy Vespa
+                        p Qùa tặng lên đến <strong>170 triệu đồng </strong> trừ vào giá trị hợp đồng mỗi căn giao dịch
+            // open hội tụ tinh túy
+            .hoitu__tinhtuy.slide
+                .hoitu__tinhtuy-text
+                    h2 hội tụ tinh túy
+                    p  <strong>Shophouse Tuần Châu Marina </strong>nằm cạnh cảng tàu khách quốc tế Tuần Châu, là cảng biển nhân tạo lớn nhất châu Á góp phần nâng tầm giá trị và diện mạo cho đảo Tuần Châu cũng như thành phố Hạ Long. Tuần Châu Marina không chỉ mang tới trải nghiệm nghỉ dưỡng thượng lưu, mà còn mở ra cơ hội đầu tư sinh lời hoàn hảo. Được nhà đầu tư khẳng định chắc chắc sẽ tăng giá trong tương lai.            
+            // investor
+            .investor.slide
+                .investor__wrap
+                    h3 chủ đầu tư dự án
+                    img(alt='investor',src='./../images/logo.png')
+                    p <strong>Tuần Châu Marina</strong> được đầu tư, phát triển bởi Tập đoàn Tuần Châu và thuộc Gami Group.Tập đoàn Tuần Châu với 20 năm kinh nghiệm, hình thành và phát triển, là một trong những tập đoàn hàng đầu Việt Nam trong lĩnh vực đầu tư phát triển Bất Động Sản, du lịch nghỉ dưỡng và vui chơi giải trí trên toàn quốc. Cùng với Gami Land (Gami Group), một trong những chủ đầu tư lớn và uy tín trong lĩnh vực Bất động sản. Sự kết hợp của 2 ông lớn mang đến sự đảm bảo vững chắc cho các Nhà đầu tư tiềm năng và sự phát triển bền vững của dự án trong tương lai.
+            // open information
+            .information.slide
+                .information__wrap
+                    .information__wrap-project
+                        h2 thông tin dự án
+                        .information__wrap-project--list
+                            p - Tên dự án: TUẦN CHÂU MARINA
+                            p - Vị trí: Số 16 KĐT Cảng Ngọc Châu, Tuần Châu, Thành phố Hạ Long, tỉnh Quảng Ninh
+                            p - Chủ đầu tư: Tập đoàn Tuần Châu
+                            p - Tổng diện tích: 85,195.6m 
+                            p - Quy mô: 15 Block Shophouse cao 3-5 tầng
+                            p - Diện tích sàn: 370 m 
+                            p - Số lượng căn Shophouse: 108 căn
+                            p - Hình thức sở hữu: Vĩnh viễn
+                    .information__wrap-signup đăng kí thông tin
+            // open position
+            .position.slide
+                .position__text
+                    h2 vị trí thuận kinh doanh - phong thủy tốt
+                    h4 <strong>Dự án Tuần Châu Marina</strong>  tọa lạc tại Trung tâm Khu đô thị cảng Ngọc Châu với cảng tàu du lịch quốc tế Tuần Châu. Sở hữu địa thế  <strong>Lưng tựa núi - Mặt hướng vịnh</strong> , các căn nhà phố Tuần Châu Marina được thiết kế sang trọng với hai mặt tiền rộng rãi, có tầm nhìn hướng thẳng ra vịnh Hạ Long, mang tới vượng khí lộc tài cho chủ sở hữu.
+                    .position__text-list
+                        p Nằm ngay vị trí trung tâm đảo gần sân bay quốc tế
+                        p  Liền kề cảng biển quốc tế Tuần Châu dài 8 km có sức chứa 2000 tàu neo đậu.
+                        p  Thời gian di chuyển Hà Nội - Tuần Châu: 2.5 giờ
+                        p  Cách khu du lịch Bãi Cháy 5.5km
+                        p  Cách vịnh Hạ Long chỉ 3km
+                        p  Quanh dự án 3km là hệ thống hạ tầng kỹ thuật – dịch vụ của đảo    
+            // open highlight
+            .highlight.slide
+                .highlight__wrap
+                    .highlight__wrap-top
+                        h1 đặc điểm nổi bật
+                        p <strong>Tuần Châu Marina</strong>  nằm bên cảng tàu du lịch quốc tế Tuần Châu, không chỉ sở hữu hạ tầng tiện ích đồng bộ, mang tới trải nghiệm nghỉ dưỡng thượng lưu bên bờ vịnh Hạ Long mà còn mở ra cơ hội đầu tư sinh lời hoàn hảo, tiềm năng tăng giá chắc chắn trong tương lai cho nhà đầu tư am hiểu thị trường, nhanh nhạy và thức thời.
+
+                    .highlight__wrap-bottom
+                        p Vị trí thuận kinh doanh
+                        p Hạ tầng hiện đại – liên kết vùng hoàn hảo
+                        p Vị trí mở cửa đón di sản, sinh tài lộc
+                        p Phong thủy tốt
+                        p Sở hữu vĩnh viễn
+                        p Thiết kế độc đáo
+                        p Số lượng có hạn
+            // open         
+            .ultilities__outside.slide
+                .ultilities__outside-wrap
+                    .ultilities__outside-wrap--text
+                        h2 tiện ích <br> bên ngoài
+                        p Với ý tưởng xây dựng khu vực căn hộ kinh doanh thương mại, lưu trú nghỉ dưỡng đẳng cấp và hiện diện sự tiện nghi “all-in-one”, chủ đầu tư sẽ thực thi hệ thống tiện ích đẳng cấp đồng bộ.
+                .ultilities__outside-images
+                    .ultilities__outside-images--item
+                        img(alt='ultilities',src='./../images/city.jpg')
+                        p Phố đi bộ
+                    .ultilities__outside-images--item
+                        img(alt='ultilities',src='./../images/golf.jpg')
+                        p Sân golf quốc tế 27 lỗ
+                    .ultilities__outside-images--item
+                        img(alt='ultilities',src='./../images/school.jpg')
+                        p Trường quốc tế
+                    .ultilities__outside-images--item
+                        img(alt='ultilities',src='./../images/plain.jpg')
+                        p Bến du thuyền 
+            //  ultilities inside------
+            .ultilities__inside.slide
+                .ultilities__inside-text
+                    h2 tiện ích bên trong
+                .ultilities__inside-images
+                    .ultilities__inside-images--top
+                        .ultilities__inside-images--item
+                            img(alt='ultilities inside',src='./images/ultilities1.jpg')
+                            p Trung tâm văn hóa và rạp chiếu phim
+                        .ultilities__inside-images--item
+                            img(alt='ultilities inside',src='./images/ultilities2.jpg')
+                            p Dịch vụ y tế thương mại công cộng 
+                        .ultilities__inside-images--item
+                            img(alt='ultilities inside',src='./images/ultilities3.jpg')
+                            p Nhà hàng Cafe Club
+                        .ultilities__inside-images--item
+                            img(alt='ultilities inside',src='./images/ultilities4.jpg')
+                            p Cửa hàng tiện ích
+                    .ultilities__inside-images--bottom
+                        .ultilities__inside-images--item
+                            img(alt='ultilities inside',src='./images/ultilities5.png')
+                            p Khu vực kinh doanh khách sạn
+                        .ultilities__inside-images--item
+                            img(alt='ultilities inside',src='./images/ultilities6.jpg')
+                            p Sân chơi thể thao
+                        .ultilities__inside-images--item
+                            img(alt='ultilities inside',src='./images/ultilities7.jpg')
+                            p Bãi đỗ xe                            
+            // video-------------            
+            .video.slide
+                .video__wrap
+                    video(controls) Không hiển thị được video
+                        source(type='video/mp4',src='./../images/video.mp4')
+            // open contact
+            .contact.slide
+                .contact__signup
+                    .contact__signup-information
+                        h2 nhận bảng giá chi tiết 02 giai đoạn mở bán của tuần châu marina
+                        h3 <i class='fas fa-star'></i> đầu tư thông minh kết hợp 3 trong 1 : nghỉ dưỡng - kinh doanh -van phòng
+                        h3 <i class='fas fa-star'></i> giá gốc từ chủ đầu tư
+                        h3 <i class='fas fa-star'></i> tiềm năng tăng giá cao trong tương lai
+                        h3 <i class='fas fa-star'></i> kinh doanh bền vững qua các thế hệ
+                        h4 <i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i> hỗ trợ ký gửi - tái đầu tư cho khách hàng
+                    .contact__signup-form
+                        h2 đăng ký thông tin
+                        form
+                            label Họ và tên : 
+                            br
+                            input(type="text")
+                            br
+                            label Số điện thoại : 
+                            br
+                            input(type="text")
+                            br
+                            label Email : 
+                            br
+                            input(type="text")
+                            br
+                            label Yêu cầu : 
+                            br
+                            input(type="textarea")
+                            br
+                            button(type=submit) nhận bảng giá
+                            
+
+                hr    
+                .contact__address            
+                    h3 liên hệ
+                    .contact__address-list
+                        h4 hệ thống siêu thị dự án bất động sản
+                        h4 trưởng phòng kinh doanh : nguyễn thu hà
+                        ul 
+                            li HOTLINE : 0916 353 773
+                            li Địa chỉ : 137 Nguyễn Ngọc Vũ ,Cầu Giấy,Hà Nội
+        script
+            include ./../../built/scripts/main.js                    
