@@ -204,6 +204,8 @@ main {
       height: 27px; }
       main .pagination .wrap__dot span {
         margin-right: 7px;
+        color: #b33565;
+        font-size: 1.2em;
         display: none; }
       main .pagination .wrap__dot .dot {
         transition: 0.5s;
@@ -211,7 +213,7 @@ main {
         width: 7px;
         height: 7px;
         border-radius: 50%;
-        background-color: #333333; }
+        background-color: #b33565; }
         main .pagination .wrap__dot .dot:hover {
           transform: scale(1.8, 1.8); }
   main .recive {
